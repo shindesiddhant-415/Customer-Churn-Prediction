@@ -1,6 +1,5 @@
 # 📊 Customer Churn Prediction & Customer Segmentation using Machine Learning
 
-![Customer Churn Overview](images/churn_distribution.png)
 
 ## 📌 Project Overview
 
