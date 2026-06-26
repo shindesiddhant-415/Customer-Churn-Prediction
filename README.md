@@ -1,4 +1,4 @@
-# 📊 Customer Churn Prediction & Customer Segmentation using Machine Learning
+# 📊 Customer Churn Prediction & Customer Segmentation using Random Forest and K-Means
 
 
 ## 📌 Project Overview
@@ -10,7 +10,7 @@ The project follows a complete Machine Learning workflow—from data preprocessi
 ## 🚀 Project Highlights
 
 - Built an end-to-end Machine Learning pipeline for customer churn prediction.
-- Achieved **79.35% model accuracy** using a Random Forest Classifier.
+- Achieved **79.35% accuracy** using a class-balanced Random Forest Classifier.
 - Improved model performance through **class imbalance handling** and **hyperparameter tuning**.
 - Performed **customer segmentation** using K-Means Clustering.
 - Generated business insights to support customer retention strategies.
@@ -38,7 +38,7 @@ This dataset was downloaded from Kaggle and is included in this repository as `T
 | --- | --- |
 | Dataset | Telco Customer Churn Dataset |
 | Source | [IBM Telco Customer Churn Dataset from Kaggle](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset) |
-| Rows | 7,043 customers |
+| Records | 7,043 customers |
 | Columns | 33 features |
 | Target | `Churn Value` (1 = churned, 0 = stayed) |
 | Class Balance | ~26% churned, ~74% stayed |
@@ -58,7 +58,7 @@ This dataset was downloaded from Kaggle and is included in this repository as `T
 * Feature Importance Analysis
 * ROC Curve & AUC Evaluation
 * Customer Segmentation using K-Means Clustering
-* Business Insight Generation
+* Business Insights
 
 ---
 
@@ -78,18 +78,20 @@ This dataset was downloaded from Kaggle and is included in this repository as `T
 
 ## ⚙ Project Workflow
 
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering
-5. Data Preprocessing
-6. Random Forest Classification
-7. Handling Class Imbalance
-8. Hyperparameter Tuning
-9. Feature Importance Analysis
-10. ROC Curve & AUC Analysis
-11. Customer Segmentation using K-Means
-12. Business Insight Generation
+| Step | Description |
+| --- | --- |
+| 1 | Data Collection |
+| 2 | Data Cleaning |
+| 3 | Exploratory Data Analysis (EDA) |
+| 4 | Feature Engineering |
+| 5 | Data Preprocessing |
+| 6 | Random Forest Classification |
+| 7 | Class Balancing |
+| 8 | Hyperparameter Tuning |
+| 9 | Feature Importance Analysis |
+| 10 | ROC Curve & AUC Analysis |
+| 11 | Customer Segmentation |
+| 12 | Business Insights |
 
 ---
 
@@ -105,9 +107,9 @@ This dataset was downloaded from Kaggle and is included in this repository as `T
 ## 📈 Model Comparison
 
 | Model | Accuracy |
-|--------|----------|
-| Random Forest | 79.13% |
-| Random Forest (Balanced) | **79.35%** ✅ |
+| --- | --- |
+| Baseline Random Forest | 79.13% |
+| Balanced Random Forest | **79.35%** ✅ |
 
 ---
 
@@ -130,7 +132,7 @@ The analysis included:
 
 ## 👥 Customer Segmentation
 
-Customers were segmented using **K-Means Clustering** based on:
+Customers were grouped into **three clusters** using **K-Means Clustering** based on:
 
 * Tenure Months
 * Monthly Charges
@@ -150,14 +152,6 @@ The segmentation helps identify different customer groups for targeted retention
 ### Correlation Heatmap
 
 ![Correlation Heatmap](images/correlation_matrix.png)
-
-### Feature Importance
-
-![Feature Importance](images/feature_importance.png)
-
-### ROC Curve
-
-![ROC Curve](images/roc_curve.png)
 
 ### Elbow Method
 
@@ -180,7 +174,7 @@ The project revealed several important insights:
 * Customers with shorter tenure are more likely to churn.
 * Month-to-month contracts show significantly higher churn rates.
 * Customers without Tech Support have a higher probability of leaving the service.
-* Higher monthly charges are associated with increased churn risk.
+* Customers with higher monthly charges, shorter tenure, and month-to-month contracts showed the highest likelihood of churn.
 * Customer segmentation helps distinguish high-risk customers from loyal long-term customers, enabling more effective retention campaigns.
 
 ---
@@ -264,10 +258,17 @@ Customer_Churn_Prediction.ipynb
 
 ---
 
+## 🎯 Conclusion
+
+This project demonstrates an end-to-end Machine Learning workflow for customer churn prediction and customer segmentation. Using Random Forest Classification and K-Means Clustering, the project identifies customers at risk of churn while generating actionable business insights to support retention strategies. It also strengthened practical understanding of data preprocessing, exploratory data analysis, model development, evaluation, and translating analytical results into meaningful business recommendations.
+
+---
+
 ## 🚀 Future Improvements
 
 * Compare Random Forest with XGBoost and LightGBM.
 * Apply advanced feature engineering techniques.
+* Compare additional ensemble methods and optimize model performance using advanced feature selection techniques.
 * Deploy the trained model using Flask or Streamlit.
 * Build an interactive dashboard for customer churn monitoring.
 * Automate predictions using a REST API.
@@ -292,6 +293,7 @@ Aspiring Data Scientist | Machine Learning Enthusiast
 
 💼 LinkedIn: https://www.linkedin.com/in/siddhant-shinde-36b621377/
 
+💻 GitHub: https://github.com/shindesiddhant-415
 
 ---
 
