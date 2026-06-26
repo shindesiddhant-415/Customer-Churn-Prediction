@@ -33,9 +33,12 @@ The objectives of this project are:
 ## 📂 Dataset Information
 
 * **Dataset:** Telco Customer Churn Dataset
-* **Number of Records:** 7,043 Customers
-* **Project Type:** Binary Classification + Customer Segmentation
-* **Target Variable:** Churn Value
+* **Source:** [IBM Telco Customer Churn Dataset from Kaggle](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset)
+* **Included File:** `Telco_customer_churn.xlsx`
+* **Number of Records:** 7,043 customers
+* **Number of Features:** 33
+* **Target Variable:** `Churn Value` (1 = churned, 0 = stayed)
+* **Class Balance:** ~26% churned, ~74% stayed
 
 ---
 
