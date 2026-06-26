@@ -32,13 +32,16 @@ The objectives of this project are:
 
 ## 📂 Dataset Information
 
-* **Dataset:** Telco Customer Churn Dataset
-* **Source:** [IBM Telco Customer Churn Dataset from Kaggle](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset)
-* **Included File:** `Telco_customer_churn.xlsx`
-* **Number of Records:** 7,043 customers
-* **Number of Features:** 33
-* **Target Variable:** `Churn Value` (1 = churned, 0 = stayed)
-* **Class Balance:** ~26% churned, ~74% stayed
+This dataset was downloaded from Kaggle and is included in this repository as `Telco_customer_churn.xlsx`.
+
+| Property | Value |
+| --- | --- |
+| Dataset | Telco Customer Churn Dataset |
+| Source | [IBM Telco Customer Churn Dataset from Kaggle](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset) |
+| Rows | 7,043 customers |
+| Columns | 33 features |
+| Target | `Churn Value` (1 = churned, 0 = stayed) |
+| Class Balance | ~26% churned, ~74% stayed |
 
 ---
 
