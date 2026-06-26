@@ -97,19 +97,20 @@ This dataset was downloaded from Kaggle and is included in this repository as `T
 
 ## 📊 Model Performance
 
-| Metric    | Score      |
-| --------- | ---------- |
-| Accuracy  | **79.35%** |
-| Precision | **66%**    |
-| Recall    | **51%**    |
-| F1-Score  | **58%**    |
+| Metric | Score |
+| --- | ---: |
+| Accuracy | **78.21%** |
+| Precision | **59.24%** |
+| Recall | **74.50%** |
+| F1-Score | **66.00%** |
+| ROC-AUC | **0.8576** |
 
 ## 📈 Model Comparison
 
 | Model | Accuracy |
 | --- | --- |
-| Baseline Random Forest | 79.13% |
-| Balanced Random Forest | **79.35%** ✅ |
+| Baseline Random Forest | 78.57% |
+| Balanced Random Forest | **78.85%** ✅ |
 
 ---
 
